@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
             Message.setTextColor(getColor(android.R.color.holo_red_dark));
 
-            if (!email.contains("@") || !email.contains(".")) {
+            if (!email.matches(".+@[a-zA-Z]{2,}.[a-zA-Z]{2,}")) {
                 Message.setText("Niepoprawny e-mail");
                 return;
             }
