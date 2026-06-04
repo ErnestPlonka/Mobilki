@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@android:drawable/ic_menu_gallery" />
+    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@android:drawable/ic_menu_camera" />
+    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@android:drawable/ic_menu_mapmode" />
+
+    <Button android:id="@+id/btn4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Powrót do Aktywności 1" />
+</LinearLayout>
