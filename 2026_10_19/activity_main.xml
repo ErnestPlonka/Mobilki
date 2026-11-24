@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#90EE90"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wizyta u weterynarza"
+        android:textSize="22sp"
+        android:textColor="#245A3B"
+        android:background="#2E8B57"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etWlasciciel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Imię i nazwisko właściciela..."
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:padding="6dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gatunek"
+        android:textSize="13sp"
+        android:textColor="#555555"
+        android:paddingTop="5dp" />
+
+    <ListView
+        android:id="@+id/listGatunek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tvWiek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ile ma lat?  0"
+            android:textSize="13sp"
+            android:textColor="#555555" />
+
+        <SeekBar
+            android:id="@+id/seekWiek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="20"
+            android:progress="0"
+            android:progressTint="#00BCD4"
+            android:thumbTint="#00BCD4" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etCelWizyty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cel wizyty"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:padding="6dp"
+        android:inputType="textCapSentences" />
+
+    <TextView
+        android:id="@+id/tvGodzina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16:00"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE" />
+
+    <TextView
+        android:id="@+id/tvWynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:textColor="#245A3B"
+        android:paddingTop="5dp" />
+
+</LinearLayout>
